@@ -44,6 +44,7 @@ json
   "plu": "12345",
   "name": "Example Product"
 }
+
 2. Создание остатка
 POST /api/inventories
 Body:
@@ -55,6 +56,7 @@ json
   "quantity_on_shelf": 20,
   "quantity_in_order": 5
 }
+
 3. Увеличение/уменьшение остатка
 PATCH /api/inventories/:id
 Body:
@@ -64,6 +66,7 @@ json
   "quantity_on_shelf": 5,
   "quantity_in_order": -3
 }
+
 4. Получение остатков
 GET /api/inventories
 Query Params:
@@ -71,6 +74,8 @@ plu (optional)
 shop_id (optional)
 quantity_on_shelf_from и quantity_on_shelf_to (optional)
 quantity_in_order_from и quantity_in_order_to (optional)
+
+
 5. Получение товаров
 GET /api/products
 Query Params:
@@ -92,6 +97,7 @@ json
   "new_quantity": 25,
   "date": "2024-11-21T10:43:08.277Z"
 }
+
 2. Получение истории действий
 GET /api/history
 Query Params:
